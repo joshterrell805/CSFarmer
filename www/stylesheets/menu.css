@@ -1,0 +1,38 @@
+/* Small */
+#menu {
+  background-color: #21481afa; /* TODO: changed primaryLight */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0.4rem;
+}
+
+/* max width of content */
+@media (min-width: 600px) {
+  #menu {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Tablet / Desktop Mode */
+@media (min-width: 800px) {
+  #menu-container {
+    max-width: calc(300px + 2rem);
+    min-width: calc(300px + 2rem);
+    padding: unset;
+    position: relative;
+    background-color: #fff7;
+    border-top: 2px solid #4651;
+    border-right: 2px solid #4654;
+    border-bottom: 2px solid #4653;
+    border-radius: 0.3rem;
+  }
+  #menu {
+    margin-right: unset;
+    margin: 0.5rem;
+    position: relative;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+/***** Small *****/
+.page {
+  margin: 1rem 0.2rem;
+}
+.page > p:first-child {
+  margin-block-start: 0.5rem;
+}
+.page > p:last-child {
+  margin-block-end: 0.5rem;
+}
+img {
+  width: 100%;
+  border-radius: 0.1rem;
+}
+
+/* max width of content */
+@media (min-width: 600px) {
+  .page {
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet / Desktop Mode */
+@media (min-width: 800px) {
+  .page > p:first-child {
+    margin-block-start: 0;
+  }
+  .page > p:last-child {
+    margin-block-end: 0;
+  }
+}
+
+/* Large Tablet / Desktop */
+@media (min-width: 1000px) {
+  .page {
+    padding: 0 2rem;
+  }
+}

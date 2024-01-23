@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+    <title>CSFarmer</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=6" />
+
+    <!-- Dependencies -->
+    <!--<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
+      integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js" integrity="sha512-m7nhpWHotpucPI37I4lPovL28Bm2BhAMV8poF3F8Z9oOEZ3jlxGzkgvG0EMt1mVL1xydr1erlBbmN90js/ssUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <!--<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"
+      integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js" integrity="sha512-I5GJQRKGdj2miDs8ComgARfiAQiZJo/43YasH22qtweoG+YRXLTDYegxC/vPgw/ERxRzww/F4l4+8UiMmI20sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.8/babel.min.js"
+      integrity="sha512-EloEMxhHnDVjte/OduE0UfxufBH8ug8MyNzYa7bu77Ad5ewVaNT2coWlB30S1a7XqoeGoCARY/xNl9UxSv79tg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ########## Utils ######## -->
+    <script src="/utils/App.js" type="text/babel"></script>
+    <script src="/utils/FormValidator.js" type="text/babel"></script>
+    <script src="/utils/G.js"></script>
+    <script src="/utils/UsageEmitter.js"></script>
+
+    <!-- ########## Pages ########## -->
+    <script src="/pages/message.js" type="text/babel"></script>
+    <script src="/pages/not-found.js" type="text/babel"></script>
+    <script src="/pages/stay-in-the-loop.js" type="text/babel"></script>
+    <script src="/pages/pre-register.js" type="text/babel"></script>
+    <script src="/pages/home.js" type="text/babel"></script>
+    <script src="/pages/regenerative-community.js?v=4" type="text/babel"></script>
+    <script src="/pages/learn-more.js" type="text/babel"></script>
+    <script src="/pages/learn-more/team.js" type="text/babel"></script>
+    <script src="/pages/learn-more/why-local.js" type="text/babel"></script>
+    <script src="/pages/learn-more/pricing.js" type="text/babel"></script>
+
+    <!-- ########## Views ########## -->
+    <script src="/views/ComingSoon.js" type="text/babel"></script>
+    <script src="/views/DemoError.js" type="text/babel"></script>
+    <script src="/views/Indent.js" type="text/babel"></script>
+    <script src="/views/Menu.js" type="text/babel"></script>
+    <script src="/views/MenuLocation.js" type="text/babel"></script>
+    <script src="/views/Page.js?v=2" type="text/babel"></script>
+    <script src="/views/Paragraph.js" type="text/babel"></script>
+    <script src="/views/Root.js" type="text/babel"></script>
+    <script src="/views/SectionTitle.js" type="text/babel"></script>
+    <script src="/views/SubTitle.js" type="text/babel"></script>
+    <script src="/views/TitleBar.js?v=2" type="text/babel"></script>
+
+    <!-- ########## Views/Input ########## -->
+    <script src="/views/input/Button.js" type="text/babel"></script>
+    <script src="/views/input/Captcha.js" type="text/babel"></script>
+    <script src="/views/input/Checkbox.js" type="text/babel"></script>
+    <script src="/views/input/CheckboxOrRadioBase.js" type="text/babel"></script>
+    <script src="/views/input/ErrorMessage.js" type="text/babel"></script>
+    <script src="/views/input/ErrorSpan.js" type="text/babel"></script>
+    <script src="/views/input/Label.js" type="text/babel"></script>
+    <script src="/views/input/Link.js" type="text/babel"></script>
+    <script src="/views/input/RadioGroup.js" type="text/babel"></script>
+    <script src="/views/input/Radio.js" type="text/babel"></script>
+    <script src="/views/input/TextBox.js" type="text/babel"></script>
+
+
+    <!-- ########## Styles ########## -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/page/home.css" />
+    <link rel="stylesheet" href="/stylesheets/page/pre-register.css" />
+    <link rel="stylesheet" href="/stylesheets/page/pricing.css" />
+    <link rel="stylesheet" href="/stylesheets/body.css?v=2" />
+    <link rel="stylesheet" href="/stylesheets/content.css" />
+    <link rel="stylesheet" href="/stylesheets/inputs.css" />
+    <link rel="stylesheet" href="/stylesheets/menu.css" />
+    <link rel="stylesheet" href="/stylesheets/page.css" />
+    <link rel="stylesheet" href="/stylesheets/text.css" />
+    <link rel="stylesheet" href="/stylesheets/title-bar.css" />
+
+    <script>
+      function randomUUID() {
+        // source: https://stackoverflow.com/a/2117523/1433127
+        return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
+          (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+        );
+      }
+    </script>
+    <script>
+      const LoadMetadata = (() => {
+        return {
+          "pageLoadId": randomUUID(),
+          "siteLoadedTimestamp": Date.now(),
+          "appVersion": "0.0.0",
+          "referrer": document.referrer,
+          "userAgent": navigator.userAgent,
+          "locationOnLoad": window.location + '',
+          "isDemoMode": (() => {
+            return false;
+            const hostname = window.location.hostname;
+            const forceDisableDemoMode = (window.location + '').includes('disableDemo=true');
+            const isDemo = forceDisableDemoMode ? false : (
+              hostname.includes('localhost') || hostname.startsWith('demo.')
+            );
+            return isDemo;
+          })(),
+        }
+      })();
+    </script>
+    <script>
+      const Urls = (() => {
+        return {
+          "usageServer": window.location.hostname == 'localhost' ? "http://localhost:8080" : "https://csfarmer.net/api/usage",
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app" />
+    <script type="text/babel">
+      (() => {
+        const container = document.getElementById('app');
+        const root = ReactDOM.createRoot(container);
+        root.render((
+          <Root/>
+        ));
+      })();
+    </script>
+    <!--
+      TODO: Upgrade this to use prod dependencies.
+
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this page for starting a new React project with JSX:
+      https://react.dev/learn/start-a-new-react-project
+
+      Read this page for adding React with JSX to an existing project:
+      https://react.dev/learn/add-react-to-an-existing-project
+    -->
+  </body>
+</html>

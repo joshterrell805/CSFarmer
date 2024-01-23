@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+p, li, h1, div > span {
+  color: #003300; /* primaryDark */
+}
+h2, h3, h4, h5, h6 {
+  color: #663300; /* secondaryDark */
+}
+p, li, div > span {
+  font-size: 1.2rem;
+}
+p {
+  white-space: pre-line;
+}
+.section-title {
+  margin-block-start: 2.4rem;
+  margin-block-end: 0.5rem;
+  text-align: center;
+}
+ul > li {
+  margin-bottom: 0.5rem;
+}
+ul > li:last-child {
+  margin-bottom: 0;
+}
+a {
+  color: #007272; /* link */
+}
+span {
+  display: inline-block;
+}
+.highlight {
+  color: #b35900; /* secondaryMedium */
+}

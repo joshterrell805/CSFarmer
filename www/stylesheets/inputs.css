@@ -1,0 +1,85 @@
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+textarea, input[type=text], input[type=email] {
+  width: 100%;
+  border-radius: 0.15rem;
+  padding: 0.2rem;
+  font-size: 1.1em;
+}
+
+input[type=checkbox], input[type=radio] {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+input[type=button] {
+  border-radius: 0.3rem;
+  color: #fffcdf; /* secondaryBright */
+  background-color: #003300; /* primaryDark */
+  display: block;
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #487c16; /* primaryMedium TODO updated*/
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+input[type=button]:first-child {
+  margin-top: 0;
+}
+input[type=button]:last-child {
+  margin-bottom: 0;
+}
+input[type=button].special {
+  background-color: #361f07; /* secondaryDarker TODO updated*/
+  border-color: #b35900; /* secondary Medium */
+}
+
+/* Tablet / Desktop Mode */
+@media (min-width: 800px) {
+  input[type=button] {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  input[type=button]:first-child {
+    margin-top: 1rem;
+  }
+  input[type=button]:last-child {
+    margin-bottom: 1rem;
+  }
+}
+
+input[type=button]:hover {
+  color: #ffd04e; /* secondaryLight TODO updated */
+}
+
+input[type=button]:active {
+  background-color:  #487c16; /* primaryMedium TODO updated*/
+}
+input[type=button].special:active {
+  background-color: #b35900; /* secondary Medium */
+}
+
+.noErrorBox {
+  border: 2px solid transparent;
+}
+
+input[type=text].noErrorBox, input[type=email].noErrorBox, textarea.noErrorBox {
+  border: 2px solid #003300; /* primaryDark */
+}
+
+.errorBox {
+  border: 2px solid #ff3300; /* error */
+}
+
+.errorFont {
+  color: #ff3300; /* error */
+}

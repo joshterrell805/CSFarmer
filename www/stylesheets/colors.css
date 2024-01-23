@@ -1,0 +1,15 @@
+not_a_valid_element_name {
+  color: #003300; /* primaryDark */
+  color: #008000; /* primaryMedium */
+  color: #86b286; /* primaryLight */
+  color: #e6ffe6; /* primaryBright */
+
+  color: #331a00; /* secondaryDarker */
+  color: #663300; /* secondaryDark */
+  color: #b35900; /* secondaryMedium */
+  color: #ffa64d; /* secondaryLight */
+  color: #fffcdf; /* secondaryBright */
+
+  color: #ff3300; /* error */
+  color: #007272; /* link */
+}

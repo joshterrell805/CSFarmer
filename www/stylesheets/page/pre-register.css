@@ -1,0 +1,9 @@
+#pre-register .sentiment {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #b35900; /* secondaryMedium */
+}
+
+#pre-register .sentiment:nth-child(3) {
+  margin-block-end: 2rem;
+}
