@@ -110,13 +110,13 @@
           "userAgent": navigator.userAgent,
           "locationOnLoad": window.location + '',
           "isDemoMode": (() => {
-            return false;
-            const hostname = window.location.hostname;
-            const forceDisableDemoMode = (window.location + '').includes('disableDemo=true');
-            const isDemo = forceDisableDemoMode ? false : (
-              hostname.includes('localhost') || hostname.startsWith('demo.')
-            );
-            return isDemo;
+            return true;
+            // const hostname = window.location.hostname;
+            // const forceDisableDemoMode = (window.location + '').includes('disableDemo=true');
+            // const isDemo = forceDisableDemoMode ? false : (
+            //   hostname.includes('localhost') || hostname.startsWith('demo.')
+            // );
+            // return isDemo;
           })(),
         }
       })();
